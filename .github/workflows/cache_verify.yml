@@ -25,6 +25,4 @@ jobs:
           key: cache-403713e
 
       - name: prime-cache-403713e
-        run: |
-          echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
-          echo "If this is the first run, it should say 'false' as we are priming it."
+        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
