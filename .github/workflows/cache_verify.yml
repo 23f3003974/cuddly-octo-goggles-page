@@ -12,10 +12,11 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Dummy Dependency
+      # We must create the file/folder BEFORE the cache step attempts to save it
+      - name: Create Dummy Files
         run: |
           mkdir -p my_deps
-          echo "Important Data" > my_deps/data.txt
+          echo "priming-data" > my_deps/data.txt
 
       - name: Cache Dependencies
         id: cache-step
@@ -25,4 +26,4 @@ jobs:
           key: cache-403713e
 
       - name: prime-cache-403713e
-        run: echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
+        run: echo "Cache hit status is ${{ steps.cache-step.outputs.cache-hit }}"
