@@ -1,0 +1,30 @@
+name: TDS Cache Verification
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  cache-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Dummy Dependency
+        run: |
+          mkdir -p my_deps
+          echo "Important Data" > my_deps/data.txt
+
+      - name: Cache Dependencies
+        id: cache-step
+        uses: actions/cache@v4
+        with:
+          path: my_deps
+          key: cache-403713e
+
+      - name: prime-cache-403713e
+        run: |
+          echo "Cache hit: ${{ steps.cache-step.outputs.cache-hit }}"
+          echo "If this is the first run, it should say 'false' as we are priming it."
