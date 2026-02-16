@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "email": "23f3003974@ds.study.iitm.ac.in",
+    "version": "2b8b17b3"
+  },
+  "products": [
+    { "id": "prod-2b8b17b3-001", "name": "Basic Item 1", "category": "home", "price": 427.63, "stock": 106, "rating": 1.5 },
+    { "id": "prod-2b8b17b3-002", "name": "Pro Item 2", "category": "books", "price": 339, "stock": 58, "rating": 2.8 },
+    { "id": "prod-2b8b17b3-003", "name": "Standard Item 3", "category": "books", "price": 359.92, "stock": 44, "rating": 1.5 },
+    { "id": "prod-2b8b17b3-004", "name": "Premium Item 4", "category": "books", "price": 120.55, "stock": 153, "rating": 1.2 },
+    { "id": "prod-2b8b17b3-005", "name": "Basic Item 5", "category": "electronics", "price": 252.47, "stock": 3, "rating": 4.6 },
+    { "id": "prod-2b8b17b3-006", "name": "Pro Item 6", "category": "books", "price": 474.01, "stock": 136, "rating": 3.6 },
+    { "id": "prod-2b8b17b3-007", "name": "Premium Item 7", "category": "clothing", "price": 413.35, "stock": 112, "rating": 4.8 },
+    { "id": "prod-2b8b17b3-008", "name": "Pro Item 8", "category": "electronics", "price": 456.7, "stock": 18, "rating": 1.8 },
+    { "id": "prod-2b8b17b3-009", "name": "Basic Item 9", "category": "home", "price": 185.71, "stock": 139, "rating": 4.9 },
+    { "id": "prod-2b8b17b3-010", "name": "Basic Item 10", "category": "books", "price": 316.79, "stock": 100, "rating": 3 },
+    { "id": "prod-2b8b17b3-011", "name": "Standard Item 11", "category": "sports", "price": 465.01, "stock": 96, "rating": 1.1 },
+    { "id": "prod-2b8b17b3-012", "name": "Standard Item 12", "category": "sports", "price": 46.29, "stock": 174, "rating": 4.7 },
+    { "id": "prod-2b8b17b3-013", "name": "Basic Item 13", "category": "clothing", "price": 41.05, "stock": 64, "rating": 1.4 },
+    { "id": "prod-2b8b17b3-014", "name": "Pro Item 14", "category": "sports", "price": 419.98, "stock": 140, "rating": 1.5 },
+    { "id": "prod-2b8b17b3-015", "name": "Pro Item 15", "category": "sports", "price": 464.77, "stock": 87, "rating": 3.2 }
+  ],
+  "aggregations": {
+    "clothing": {
+      "count": 2,
+      "inventoryValue": 48922.40
+    }
+  }
+}
