@@ -1,0 +1,16 @@
+name: TDS Verification Workflow
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  tds-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 23f3003974@ds.study.iitm.ac.in
+        run: echo "Finalizing TDS Task 6"
